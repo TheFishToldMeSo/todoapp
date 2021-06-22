@@ -1,4 +1,4 @@
-import "./DemoCSS.scss";
+import "./DemoCSS.css";
 
 function DemoCSS() {
   return (
