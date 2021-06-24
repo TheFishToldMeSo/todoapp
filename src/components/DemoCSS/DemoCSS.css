@@ -1,10 +1,75 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-.emagContainer {
-  background: rgb(168, 44, 44);
-  color: red;
+body {
   font-family: "PoppinsVN", sans-serif;
   font-weight: 400;
-  box-sizing: border-box;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container2 {
+    max-width: 1140px;
+  }
+  .container {
+    display: block;
+    width: 100%;
+    float: left;
+    -moz-box-flex: 0;
+    flex: 0 0 auto;
+  }
+  .section-container {
+    display: block;
+    width: 100%;
+    float: left;
+    -moz-box-flex: 0;
+    flex: 0 0 auto;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container2 {
+    max-width: 960px;
+  }
+  .container {
+    float: left;
+    -moz-box-flex: 0;
+    flex: 0 0 auto;
+  }
+  .section-container {
+    display: block;
+    width: 100%;
+    float: left;
+    -moz-box-flex: 0;
+    flex: 0 0 auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container2 {
+    max-width: 540px;
+  }
+}
+@media only screen and (max-width: 7686px) {
+  .intervieweeAnswer p {
+    margin-bottom: 0;
+  }
+}
+
+main {
+  display: block;
+}
+div {
+  display: block;
+}
+.eMagBigContainer {
+  min-height: calc(100vh - 608px);
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+}
+.emag {
+  background: #fff;
+}
+.emagContainer {
   width: 100%;
 
   -moz-box-align: start;
@@ -19,18 +84,14 @@
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-
-  @media only screen and (max-width: 1200px) {
-    max-width: 1140px;
-  }
-
-  @media only screen and (max-width: 992px) {
-    max-width: 960px;
-  }
-
-  @media only screen and (max-width: 576px) {
-    max-width: 540px;
-  }
+}
+.emagContainer::before {
+  display: flex;
+  width: 100%;
+}
+.emagContainer::after {
+  display: flex;
+  width: 100%;
 }
 
 .emagContainer h2 {
@@ -61,20 +122,16 @@
   flex: 0 0 auto;
   position: relative;
   min-height: 1px;
-
-  @media only screen and (max-width: 1200px) {
-    display: block;
-    width: 100%;
-    float: left;
-    -moz-box-flex: 0;
-    flex: 0 0 auto;
-  }
-
-  @media only screen and (max-width: 992px) {
-    float: left;
-    -moz-box-flex: 0;
-    flex: 0 0 auto;
-  }
+}
+.container::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .imgWrapper {
   width: 100%;
@@ -86,13 +143,15 @@
   -webkit-object-fit: cover;
   object-fit: cover;
 }
-.section-container {
+
+.container2 {
   padding-left: 0;
   padding-right: 0;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-
+}
+.section-container {
   -moz-box-direction: normal;
   -moz-box-orient: vertical;
 
@@ -101,22 +160,6 @@
   padding-left: 200px;
   padding-right: 200px;
   margin: 0 0 120px;
-
-  @media only screen and (max-width: 1200px) {
-    display: block;
-    width: 100%;
-    float: left;
-    -moz-box-flex: 0;
-    flex: 0 0 auto;
-  }
-
-  @media only screen and (max-width: 992px) {
-    display: block;
-    width: 100%;
-    float: left;
-    -moz-box-flex: 0;
-    flex: 0 0 auto;
-  }
 }
 .section-container h2 {
   font-family: Open Sans, sans-serif;
@@ -159,9 +202,6 @@
   font-weight: 300;
   line-height: 36px;
   margin-top: 0;
-  @media only screen and (max-width: 7686px) {
-    margin-bottom: 0;
-  }
 }
 .intervieweeAnswer .right {
   margin-left: 84px;
@@ -283,25 +323,6 @@
   max-width: 100%;
   -webkit-object-fit: cover;
   object-fit: cover;
-}
-
-.container2 {
-  padding-left: 0;
-  padding-right: 0;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  @media only screen and (max-width: 1200px) {
-    max-width: 1140px;
-  }
-
-  @media only screen and (max-width: 992px) {
-    max-width: 960px;
-  }
-
-  @media only screen and (max-width: 576px) {
-    max-width: 540px;
-  }
 }
 .extraDescription {
   display: block;
